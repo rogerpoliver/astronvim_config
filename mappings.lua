@@ -9,6 +9,10 @@ return {
     -- second key is the lefthand side of the map
 
     -- navigate buffer tabs with `H` and `L`
+    ["<Tab>"] = {
+      function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
+      desc = "Next buffer",
+    },
     -- L = {
     --   function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end,
     --   desc = "Next buffer",
@@ -36,5 +40,11 @@ return {
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  i = {
+    ["<C-h>"] = { "<Left>", desc = "Move cursor left" },
+    ["<C-j>"] = { "<Down>", desc = "Move cursor down" },
+    ["<C-k>"] = { "<Up>", desc = "Move cursor up" },
+    ["<C-l>"] = { "<Right>", desc = "Move cursor right" },
   },
 }

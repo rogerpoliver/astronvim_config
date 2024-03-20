@@ -8,5 +8,11 @@ return {
         hide_gitignored = false,
       },
     },
+    window = {
+      width = 30,
+      mappings = {
+        ["<Tab>"] = "next_source",
+      },
+    },
   },
 }
