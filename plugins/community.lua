@@ -15,7 +15,7 @@ return {
   { import = "astrocommunity.colorscheme.oxocarbon-nvim", enabled = false },
   { import = "astrocommunity.colorscheme.monokai-pro-nvim", enabled = false },
   { import = "astrocommunity.colorscheme.poimandres-nvim", enabled = false },
-  { import = "astrocommunity.colorscheme.catppuccin", enabled = false },
+  { import = "astrocommunity.colorscheme.catppuccin", enabled = true },
   { import = "astrocommunity.colorscheme.iceberg-vim", enabled = false },
   -- Diagnostics
   { import = "astrocommunity.diagnostics.trouble-nvim" },
@@ -46,5 +46,5 @@ return {
   -- Scrolling
   { import = "astrocommunity.scrolling.vim-smoothie" },
   -- Workflow
-  { import = "astrocommunity.workflow.hardtime-nvim" },
+  { import = "astrocommunity.workflow.hardtime-nvim", enabled = false },
 }
